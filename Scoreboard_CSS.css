@@ -1,0 +1,175 @@
+body {
+    margin: 0;
+    background-color: black;
+    display: flex;
+    justify-content: center;   /* centers horizontally */
+    align-items: center;       /* centers vertically */
+    height: 100vh;             /* full viewport height */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #003049;
+  width: 800px;
+  height: 600px;
+  border-radius: 12px;
+  padding: 20px;
+  box-sizing: border-box;
+  gap: 40px;
+}
+
+.label {
+  font-size: 30pt;
+  font-weight: 600;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+.teams {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.team-home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  color: white;
+  flex: 1; /* equal width for both sides */
+}
+
+#score-home {
+  background-color: black;
+  border-radius: 10px;
+  padding: 30px 60px;
+  font-family: "Tourney", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 50pt;
+  color: red;
+}
+
+.radio-row {
+    display: flex;
+    gap: 10px;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.team-away {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  color: white;
+  flex: 1; /* equal width for both sides */
+}
+ 
+#score-away {
+  background-color: black;
+  border-radius: 10px;
+  padding: 30px 60px;
+  font-family: "Tourney", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 50pt;
+  color: red;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+    font-style: italic;
+    font-size: 15pt;
+    font-weight: bold;
+    background-color: white;
+    border: none;
+    border-radius: 50px;
+    color: black;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn:hover {
+  background-color: greenyellow;
+}
+
+#resetbtn {
+    font-size: 20pt;
+    font-weight: bold;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    color: black;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+#resetbtn:hover {
+  background-color: red;
+  color: white;
+}
+
+.radio-light {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.radio-light.active {
+    background-color: red;
+}
+
+.foulbtn {
+    font-style: italic;
+    font-size: 15pt;
+    font-weight: bold;
+    background-color: white;
+    border: none;
+    border-radius: 50px;
+    color: black;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.foulbtn:hover {
+  background-color: red;
+  color: white;
+}
+
+#foulresetbtn {
+    font-size: 15pt;
+    font-weight: bold;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    color: black;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+#foulresetbtn:hover {
+  background-color: green;
+  color: white;
+}
