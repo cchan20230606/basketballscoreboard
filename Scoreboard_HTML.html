@@ -1,0 +1,51 @@
+<html>
+<head>
+<link rel="stylesheet" href="index.css">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Tourney:ital,wght@0,100..900;1,100..900&display=swap');
+</style>
+</head>
+    <body>
+        <div class="container">
+            <div class="teams">
+                <div class="team-home">
+                    <div class="label">HOME</div>
+                    <div id="score-home">0</div>
+                        <div class="buttons">
+                            <button class="btn" onclick="increment1toHome()">+1</button>
+                            <button class="btn" onclick="increment2toHome()">+2</button>
+                            <button class="btn" onclick="increment3toHome()">+3</button>
+                        </div>
+                        <div class="radio-row" id="home-foul">
+                            <label><input type="radio"><span class="radio-light"></span></label>
+                            <label><input type="radio"><span class="radio-light"></span></label>
+                            <label><input type="radio"><span class="radio-light"></span></label>
+                            <label><input type="radio"><span class="radio-light"></span></label>
+                            <label><input type="radio"><span class="radio-light"></span></label>
+                        </div>
+                            <button class="foulbtn" onclick="homefoulbtn()">FOUL</button>
+                    </div>
+                <div class="team-away">
+                    <div class="label">AWAY</div>
+                    <div id="score-away">0</div>
+                     <div class="buttons">
+                        <button class="btn" onclick="increment1toAway()">+1</button>
+                        <button class="btn" onclick="increment2toAway()">+2</button>
+                        <button class="btn" onclick="increment3toAway()">+3</button>
+                    </div>
+                    <div class="radio-row" id="away-foul">
+                            <label><input type="radio"><span class="radio-light"></span></label>
+                            <label><input type="radio"><span class="radio-light"></span></label>
+                            <label><input type="radio"><span class="radio-light"></span></label>
+                            <label><input type="radio"><span class="radio-light"></span></label>
+                            <label><input type="radio"><span class="radio-light"></span></label>
+                    </div>
+                            <button class="foulbtn" onclick="awayfoulbtn()">FOUL</button>
+                </div>
+            </div>
+            <button id="resetbtn" onclick="Reset()">Reset</button>
+            <button id="foulresetbtn" onclick="FoulReset()">Foul Reset</button>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
